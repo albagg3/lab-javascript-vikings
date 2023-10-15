@@ -104,6 +104,32 @@ class War {
         }
         return result;
     }
+    //******REFACTORIZATION**********
+    // attack(soldier)
+    // {
+    //     let army;
+    //     let enemyArmy
+    //     if('name' in soldier)
+    //     {
+    //         army = this.vikingArmy;
+    //         enemyArmy = this.saxonArmy;
+    //     }
+    //     else
+    //     {
+    //         army = this.saxonArmy;
+    //         enemyArmy = this.vikingArmy;
+    //     }
+    //     let randomSoldier = army[Math.floor(Math.random()*army.length)]
+    //     let result = randomSoldier.receiveDamage(enemyArmy[0].strength)
+    //     for(let i = 0; i < army.length; i++)
+    //     {
+    //         if(army[i].health <= 0)
+    //         {
+    //             army.splice(i,1);
+    //         }
+    //     }
+    //     return result;
+    // }
     showStatus()
     {
         if (this.saxonArmy.length === 0)
@@ -121,7 +147,8 @@ class War {
     }
 }
 
-// let vikingOne = new Viking ("juanix", 10, 5);
+let vikingOne = new Viking ("juanix", 10, 5);
+
 // let vikingTwo = new Viking ("albix", 10, 5);
 // let vikingThree = new Viking ("Olivix", 10, 5);
 // let vikingFour = new Viking ("Arturix", 10, 5);
