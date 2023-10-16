@@ -76,7 +76,7 @@ class War {
         
         let randomSaxon = this.saxonArmy[Math.floor(Math.random()*this.saxonArmy.length)]
         console.log(randomSaxon)
-        let result = randomSaxon.receiveDamage(this.vikingArmy[0].strength)
+        let result = randomSaxon.receiveDamage(this.vikingArmy[Math.floor(Math.random()*this.vikingArmy.length)].strength)
         for(let i = 0; i < this.saxonArmy.length; i++)
         {
             if(this.saxonArmy[i].health <= 0)
@@ -90,7 +90,7 @@ class War {
     {
         let randomViking = this.vikingArmy[Math.floor(Math.random()*this.vikingArmy.length)]
         console.log(randomViking)
-        let result = randomViking.receiveDamage(this.saxonArmy[0].strength)
+        let result = randomViking.receiveDamage(this.saxonArmy[Math.floor(Math.random()*this.saxonArmy.length)].strength)
         for(let i = 0; i < this.vikingArmy.length; i++)
         {
             if(this.vikingArmy[i].health <= 0)
@@ -142,33 +142,33 @@ class War {
         }
     }
 }
-let viking="hola"
-let vikingOne = new Viking ("juanix", 10, 5);
-let vikingTwo = new Viking ("albix", 10, 5);
-let vikingThree = new Viking ("Olivix", 10, 5);
-let vikingFour = new Viking ("Arturix", 10, 5);
-let vikingFive = new Viking ("Micaelix", 10, 5);
-let saxonOne = new Saxon(20, 2);
-let saxonTwo = new Saxon(20, 2);
-let saxonThree = new Saxon(20, 2);
-let saxonFour = new Saxon(20, 2);
-let saxonFive = new Saxon(20, 2);
+// let viking="hola"
+// let vikingOne = new Viking ("juanix", 10, 5);
+// let vikingTwo = new Viking ("albix", 10, 5);
+// let vikingThree = new Viking ("Olivix", 10, 5);
+// let vikingFour = new Viking ("Arturix", 10, 5);
+// let vikingFive = new Viking ("Micaelix", 10, 5);
+// let saxonOne = new Saxon(20, 2);
+// let saxonTwo = new Saxon(20, 2);
+// let saxonThree = new Saxon(20, 2);
+// let saxonFour = new Saxon(20, 2);
+// let saxonFive = new Saxon(20, 2);
 
-let firstWar = new War();
+// let firstWar = new War();
 
-firstWar.addViking(vikingOne);
-firstWar.addViking(vikingTwo);
-firstWar.addViking(vikingThree);
-firstWar.addViking(vikingFour);
-firstWar.addViking(vikingFive);
+// firstWar.addViking(vikingOne);
+// firstWar.addViking(vikingTwo);
+// firstWar.addViking(vikingThree);
+// firstWar.addViking(vikingFour);
+// firstWar.addViking(vikingFive);
 
-firstWar.addSaxon(saxonOne);
-firstWar.addSaxon(saxonTwo);
-firstWar.addSaxon(saxonThree);
-firstWar.addSaxon(saxonFour);
-firstWar.addSaxon(saxonFive);
+// firstWar.addSaxon(saxonOne);
+// firstWar.addSaxon(saxonTwo);
+// firstWar.addSaxon(saxonThree);
+// firstWar.addSaxon(saxonFour);
+// firstWar.addSaxon(saxonFive);
 
-firstWar.vikingAttack();
+// firstWar.vikingAttack();
 
 
 
